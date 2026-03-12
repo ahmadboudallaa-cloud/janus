@@ -12,18 +12,18 @@ class HabitLog extends Model
 {
     use HasFactory;
 
-    /**
-     * @var list<string>
-     */
+       
+                        
+       
     protected $fillable = [
         'habit_id',
         'completed_at',
         'note',
     ];
 
-    /**
-     * @return array<string, string>
-     */
+       
+                                    
+       
     protected function casts(): array
     {
         return [
