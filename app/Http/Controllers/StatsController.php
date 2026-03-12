@@ -120,9 +120,9 @@ class StatsController extends Controller
         ], 'Overview stats retrieved.');
     }
 
-    /**
-     * @param array<int, string> $datesDesc
-     */
+       
+                                           
+       
     private function calculateCurrentStreak(array $datesDesc): int
     {
         if ($datesDesc === []) {
@@ -148,9 +148,9 @@ class StatsController extends Controller
         return $streak;
     }
 
-    /**
-     * @param array<int, string> $datesDesc
-     */
+       
+                                           
+       
     private function calculateLongestStreak(array $datesDesc): int
     {
         if ($datesDesc === []) {
@@ -182,11 +182,11 @@ class StatsController extends Controller
         return $max;
     }
 
-    /**
-     * @param iterable<\App\Models\Habit> $habits
-     * @param array<int, array<int, string>> $logsByHabit
-     * @return array<string, mixed>
-     */
+       
+                                                 
+                                                         
+                                   
+       
     private function findLongestActiveStreak(iterable $habits, array $logsByHabit): array
     {
         $best = [

@@ -68,10 +68,10 @@ class AuthController extends Controller
         $currentToken = $user->currentAccessToken();
 
         if ($currentToken !== null) {
-            // Revoke only the current token to keep other sessions alive.
+                                                                          
             $currentToken->delete();
         } else {
-            // Fallback: revoke all tokens if the current token cannot be resolved.
+                                                                                   
             $user->tokens()->delete();
         }
 
