@@ -13,9 +13,9 @@ class Habit extends Model
 {
     use HasFactory;
 
-    /**
-     * @var list<string>
-     */
+       
+                        
+       
     protected $fillable = [
         'user_id',
         'title',
@@ -26,9 +26,9 @@ class Habit extends Model
         'is_active',
     ];
 
-    /**
-     * @return array<string, string>
-     */
+       
+                                    
+       
     protected function casts(): array
     {
         return [
